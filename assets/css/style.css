@@ -1,0 +1,788 @@
+/* ======================================================
+   EL DESMARQUE DEL FÚTBOL
+   STYLE.CSS
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0f172a;
+
+    color:#ffffff;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/*==============================
+NAVBAR
+===============================*/
+
+.navbar{
+
+    background:#111827 !important;
+
+    border-bottom:3px solid #facc15;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+}
+
+.navbar-brand img{
+
+    transition:.35s;
+
+}
+
+.navbar-brand img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.nav-link{
+
+    color:#d1d5db !important;
+
+    font-weight:600;
+
+    margin-left:8px;
+
+    transition:.30s;
+
+}
+
+.nav-link:hover{
+
+    color:#facc15 !important;
+
+}
+
+.nav-link.active{
+
+    color:#ffffff !important;
+
+}
+
+/*==============================
+TICKER
+===============================*/
+
+.ticker{
+
+    background:#d90429;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    color:#fff;
+
+    font-weight:bold;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.ticker-wrap{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+.ticker-move{
+
+    display:inline-block;
+
+    white-space:nowrap;
+
+    padding-left:100%;
+
+    animation:ticker 28s linear infinite;
+
+    font-size:17px;
+
+}
+
+@keyframes ticker{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-100%);
+
+    }
+
+}
+
+/*==============================
+PARTIDO DESTACADO
+===============================*/
+
+.card{
+
+    border-radius:18px;
+
+}
+
+.card-img{
+
+    border-radius:18px;
+
+}
+
+.card-img-overlay{
+
+    padding:40px;
+
+}
+
+.card-img-overlay h1{
+
+    font-size:3.4rem;
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    text-shadow:0 2px 15px rgba(0,0,0,.55);
+
+}
+
+.card-img-overlay h3{
+
+    margin-top:12px;
+
+    font-weight:600;
+
+}
+
+.card-img-overlay h5{
+
+    color:#e5e7eb;
+
+}
+
+.badge{
+
+    padding:10px 15px;
+
+    border-radius:40px;
+
+}
+
+.btn-danger{
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.30s;
+
+}
+
+.btn-danger:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(217,4,41,.40);
+
+}
+
+/*======================================================
+ÚLTIMAS NOTICIAS
+======================================================*/
+
+.card-header{
+
+    border:0;
+
+    font-weight:700;
+
+    font-size:20px;
+
+}
+
+.list-group-item{
+
+    border:none;
+
+    padding:18px;
+
+    font-size:16px;
+
+    transition:.30s;
+
+    cursor:pointer;
+
+}
+
+.list-group-item:hover{
+
+    background:#f3f4f6;
+
+    padding-left:28px;
+
+}
+
+/*======================================================
+SECCIONES
+======================================================*/
+
+.section{
+
+    padding:70px 0;
+
+}
+
+.section-title{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:#facc15;
+
+    display:block;
+
+    margin-top:12px;
+
+    border-radius:50px;
+
+}
+
+/*======================================================
+CARDS
+======================================================*/
+
+.news-card{
+
+    background:#1f2937;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.news-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.news-card-body{
+
+    padding:22px;
+
+}
+
+.news-card h3{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.news-card p{
+
+    color:#d1d5db;
+
+    line-height:1.6;
+
+}
+
+/*======================================================
+BOTONES
+======================================================*/
+
+.btn-yellow{
+
+    background:#facc15;
+
+    color:#111827;
+
+    font-weight:700;
+
+    border-radius:40px;
+
+    padding:12px 28px;
+
+    transition:.30s;
+
+}
+
+.btn-yellow:hover{
+
+    background:#fde047;
+
+    transform:translateY(-3px);
+
+}
+
+/*======================================================
+EN VIVO
+======================================================*/
+
+.live-dot{
+
+    width:12px;
+
+    height:12px;
+
+    background:#ff0000;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+    margin-right:10px;
+
+    animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.4);
+
+        opacity:.35;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*======================================================
+COUNTDOWN
+======================================================*/
+
+.countdown{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:25px;
+
+}
+
+.count-item{
+
+    background:#ffffff;
+
+    color:#111827;
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+.count-item span{
+
+    font-size:28px;
+
+}
+
+.count-item small{
+
+    font-size:13px;
+
+}
+
+/*======================================================
+PATROCINADORES
+======================================================*/
+
+.sponsor-card{
+
+    background:#1f2937;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.sponsor-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.sponsor-card img{
+
+    max-width:180px;
+
+    max-height:90px;
+
+    object-fit:contain;
+
+    filter:grayscale(100%);
+
+    transition:.35s;
+
+}
+
+.sponsor-card:hover img{
+
+    filter:grayscale(0%);
+
+}
+
+/*======================================================
+FOOTER
+======================================================*/
+
+footer{
+
+    background:#090f1c;
+
+    margin-top:70px;
+
+    padding:60px 0 25px;
+
+    border-top:3px solid #facc15;
+
+}
+
+footer h4{
+
+    color:#facc15;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+footer a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    transition:.30s;
+
+}
+
+footer a:hover{
+
+    color:#facc15;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.10);
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+/*======================================================
+SCROLLBAR
+======================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#facc15;
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#fde047;
+
+}
+
+/*======================================================
+ANIMACIONES
+======================================================*/
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*======================================================
+RESPONSIVE
+======================================================*/
+
+@media(max-width:992px){
+
+    .card-img-overlay{
+
+        padding:25px;
+
+    }
+
+    .card-img-overlay h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .card-img{
+
+        height:420px !important;
+
+    }
+
+    .countdown{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar-brand img{
+
+        height:60px !important;
+
+    }
+
+    .ticker{
+
+        height:38px;
+
+        font-size:14px;
+
+    }
+
+    .ticker-move{
+
+        font-size:14px;
+
+    }
+
+    .card-img-overlay{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .card-img-overlay h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .card-img-overlay h3{
+
+        font-size:1.2rem;
+
+    }
+
+    .card-img{
+
+        height:350px !important;
+
+    }
+
+    .btn-danger{
+
+        width:100% !important;
+
+    }
+
+    .count-item{
+
+        width:65px;
+
+        height:65px;
+
+    }
+
+    .count-item span{
+
+        font-size:22px;
+
+    }
+
+}
+
+/* TITULO DEL PARTIDO */
+
+.card-img-overlay{
+
+    color:#fff;
+
+}
+
+.card-img-overlay h1{
+
+    color:#ffffff !important;
+
+    text-shadow:0 5px 15px rgba(0,0,0,.85);
+
+}
+
+.card-img-overlay h3,
+.card-img-overlay h5,
+.card-img-overlay small{
+
+    color:#ffffff !important;
+
+    text-shadow:0 2px 10px rgba(0,0,0,.9);
+
+}
