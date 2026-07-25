@@ -1,118 +1,854 @@
-<!DOCTYPE html>
+html_content = """<!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Principal -->
-  <title>Millonarios vs Bucaramanga EN VIVO: Transmisión y Minuto a Minuto | El Desmarque del Fútbol</title>
-  <meta name="description" content="Sigue en vivo la transmisión de Millonarios vs Bucaramanga con la narración, comentarios, señal en directo, tabla de posiciones y el mejor análisis del partido.">
-  <meta name="keywords" content="Millonarios vs Bucaramanga en vivo, ver Millonarios vs Bucaramanga, Liga BetPlay en vivo, El Desmarque del Fútbol, fútbol colombiano en directo">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph (Facebook / WhatsApp) -->
-  <meta property="og:title" content="Millonarios vs Bucaramanga EN VIVO | El Desmarque del Fútbol">
-  <meta property="og:description" content="Sigue nuestra cobertura en vivo con la narración, comentarios y el mejor análisis del partido.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/logo-favicon.png">
-  <meta property="og:locale" content="es_CO">
-  
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Millonarios vs Bucaramanga EN VIVO | El Desmarque del Fútbol">
-  <meta name="twitter:description" content="Transmisión en directo, reacciones y análisis del partido entre Millonarios y Bucaramanga.">
-  <meta name="twitter:image" content="assets/img/logo-favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FAVICON -->
-  <link rel="icon" href="assets/img/logo-favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/img/logo-favicon.png">
+    <title>El Desmarque del Fútbol | Cobertura Deportiva en Vivo</title>
 
-  <!-- CSS & CDNs -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description"
+        content="Vive la cobertura EN VIVO de Millonarios vs Bucaramanga por la Liga Colombiana Fecha 1. Narración de Álvaro Malkún Salazar, análisis de Jaime Vélez Pérez y producción de Mauricio Guerrero.">
+    <meta name="keywords"
+        content="Millonarios, Bucaramanga, Liga Colombiana, cobertura en vivo, narración, fútbol colombiano, El Desmarque del Fútbol">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Millonarios vs Bucaramanga EN VIVO | El Desmarque del Fútbol">
+    <meta property="og:description" content="Sigue nuestra cobertura en vivo con la narración, comentarios y el mejor análisis del partido.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/EJEMPLO LOGO 2 (1).png">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/img/EJEMPLO LOGO 2 (1).png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/EJEMPLO LOGO 2 (1).png">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-  <!-- Encabezado / Navbar -->
-  <header class="bg-dark text-white py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3 m-0">El Desmarque del Fútbol</h1>
-      <nav>
-        <a href="#en-vivo" class="text-white me-3 text-decoration-none">En Vivo</a>
-        <a href="#posiciones" class="text-white text-decoration-none">Tabla de Posiciones</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Sección Transmisión En Vivo -->
-  <main class="container my-5" id="en-vivo">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2 text-center">
-        <h2 class="mb-3">Millonarios vs Bucaramanga — Transmisión en Vivo</h2>
-        <p class="lead">Disfruta del análisis, narración y minuto a minuto del encuentro de la Liga BetPlay.</p>
-
-        <!-- Contenedor Reproductor -->
-        <div class="ratio ratio-16x9 my-4 rounded shadow bg-black d-flex align-items-center justify-content-center">
-          <!-- NOTA REPRODUCTOR: 
-               Para habilitar Twitch, reemplaza CANAL_TWITCH por el nombre de usuario de Twitch 
-               y TU_DOMINIO por la URL donde publicas la página (ej: tuusuario.github.io).
-          -->
-          <iframe 
-            src="https://player.twitch.tv/?channel=CANAL_TWITCH&parent=TU_DOMINIO" 
-            allowfullscreen 
-            style="border:none; width:100%; height:100%;">
-          </iframe>
+<!-- ==========================================
+MENÚ PRINCIPAL
+=========================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-danger">
+    <div class="container">
+        <a class="navbar-brand" href="#inicio">
+            <img src="assets/img/EJEMPLO LOGO 2 (1).png" alt="El Desmarque del Fútbol" height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+                <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#replays">Replays</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger fw-bold bg-danger bg-opacity-10 rounded px-3 border border-danger" href="#transmision">
+                        🔴 EN VIVO
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#tabla">Tabla</a></li>
+                <li class="nav-item"><a class="nav-link" href="#calendario">Calendario</a></li>
+                <li class="nav-item"><a class="nav-link" href="#patrocinadores">Patrocinadores</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-      </div>
     </div>
-  </main>
+</nav>
 
-  <!-- Sección Tabla de Posiciones -->
-  <section class="container my-5" id="posiciones">
-    <h2 class="text-center mb-4">Tabla de Posiciones</h2>
-    <div class="table-responsive">
-      <table class="table table-striped table-hover text-center">
-        <thead class="table-dark">
-          <tr>
-            <th>#</th>
-            <th>Equipo</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PE</th>
-            <th>PP</th>
-            <th>PTS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Millonarios</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Bucaramanga</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+<!-- ==========================================
+TICKER ANIMADO
+=========================================== -->
+<section class="ticker">
+    <div class="ticker-wrap">
+        <div class="ticker-move">
+            🔴 PRÓXIMA TRANSMISIÓN | SÁBADO 25 DE JULIO - 5:30 PM | 
+            Millonarios FC 🇨🇴 vs Atlético Bucaramanga 🇨🇴 | 
+            Fecha 1 - Liga Colombiana 2026-II | 
+            Narración: Álvaro Malkún Salazar | 
+            Análisis: Jaime Vélez Pérez | 
+            Producción: Mauricio Guerrero | 
+            Sigue la pasión del FPC junto a El Desmarque del Fútbol.
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Pie de Página -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p class="m-0">&copy; El Desmarque del Fútbol — Todos los derechos reservados.</p>
-  </footer>
+<!-- ==========================================
+HERO PRINCIPAL (INICIO)
+=========================================== -->
+<section id="inicio" class="container-fluid py-4">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="card bg-dark border-0 shadow-lg overflow-hidden position-relative">
+                <img src="assets/img/imagen_el-desmarque_del_futbol.png" class="card-img" alt="Millonarios vs Bucaramanga" style="height:620px; object-fit:cover; opacity:.25;">
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-4 p-md-5">
+                    <span class="badge bg-danger mb-3 align-self-start fs-6 px-3 py-2">
+                        ⏳ PRÓXIMO EN VIVO
+                    </span>
+                    <small class="text-warning fs-5 fw-bold text-uppercase">
+                        LIGA COLOMBIANA - FECHA 1 (2026-II)
+                    </small>
+                    <h1 class="display-4 fw-bold mt-2 text-white">
+                        Millonarios FC 🇨🇴 <span class="text-warning fs-3">VS</span> Atlético Bucaramanga 🇨🇴
+                    </h1>
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark fs-6 me-2">🗓️ Sábado 25 de Julio</span>
+                        <span class="badge bg-light text-dark fs-6">🕢 Desde las 5:30 PM</span>
+                    </div>
+                    <h3 class="mt-4 text-white">🎙 La narración que siente el hincha.</h3>
+                    <p class="fs-5 text-white-50 mb-4">
+                        Acompáñanos con el relato y análisis apasionado en tiempo real de nuestro equipo periodístico.
+                    </p>
+                    <div>
+                        <a href="#transmision" class="btn btn-danger btn-lg fw-bold px-4 py-2">
+                            ▶ IR A LA TRANSMISIÓN
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-lg-4">
+            <div class="card shadow-lg border-0 h-100 bg-dark text-white">
+                <div class="card-header bg-danger text-white py-3">
+                    <h4 class="m-0 fw-bold">📌 Ficha del Partido</h4>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="badge bg-warning text-dark mb-3">FECHA 1 - LIGA COLOMBIANA</span>
+                        <h3 class="fw-bold text-light">Millonarios FC 🇨🇴</h3>
+                        <h2 class="text-center text-warning my-2">VS</h2>
+                        <h3 class="fw-bold text-light">Atl. Bucaramanga 🇨🇴</h3>
+                        <hr class="border-secondary">
+                        <p class="mb-1">🏆 <strong>Torneo:</strong> Liga BetPlay Dimayor (2026-II)</p>
+                        <p class="mb-1">📍 <strong>Estadio:</strong> Nemesio Camacho El Campín</p>
+                        <p class="mb-1">⏰ <strong>Inicio Emisión:</strong> 5:30 PM</p>
+                        <hr class="border-secondary">
+                        <h5 class="text-danger fw-bold">Equipo de Cabina:</h5>
+                        <ul class="list-unstyled mt-2 text-white-50">
+                            <li>🎙️ <strong>Relatos:</strong> Álvaro Malkún Salazar</li>
+                            <li>⚽ <strong>Comentarios:</strong> Jaime Vélez Pérez</li>
+                            <li>🎧 <strong>Producción y Comentarios:</strong> Mauricio Guerrero</li>
+                        </ul>
+                    </div>
+                    <a href="#transmision" class="btn btn-outline-danger w-100 fw-bold mt-3">
+                        VER PANTALLA EN VIVO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN NOTICIAS (ALTAS Y BAJAS COMPLETAS)
+=========================================== -->
+<section id="noticias" class="py-5 bg-dark border-top border-secondary">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-danger fs-6 mb-2">MERCADO DE FICHAJES</span>
+            <h2 class="display-5 fw-bold text-white">Altas y Bajas de la Liga Colombiana</h2>
+            <p class="text-white-50">Mantente al día con todos los movimientos oficiales de la Liga BetPlay 2026-II</p>
+        </div>
+
+        <div class="accordion accordion-flush rounded-4 overflow-hidden shadow-lg" id="accordionFichajes">
+            
+            <!-- MILLONARIOS -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#millonarios">
+                        Millonarios FC
+                    </button>
+                </h2>
+                <div id="millonarios" class="accordion-collapse collapse show" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Daniel Ruiz, Francisco Chaverra, James Aguirre, Javier Burrai, Andrey Estupiñán, Jhomier Guerrero, Stiven Barreiro.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Beckham Castro, Diego Novoa, Álex Castro, Jorge Cabezas Hurtado, Nicolás Giraldo, Guillermo De Amores, Edgar Elizalde, Falcao García.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ATLÉTICO NACIONAL -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#nacional">
+                        Atlético Nacional
+                    </button>
+                </h2>
+                <div id="nacional" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Edwin Cardona, William Tesillo, David Ospina, Jorman Campuzano, Dairon Asprilla, Marino Hinestroza, Kevin Viveros.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Jefferson Duque, Neyder Moreno, Sergio Mosquera, Eric Ramírez, Carlos Sierra, Agustín Álvarez Wallace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AMÉRICA DE CALI -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#america">
+                        América de Cali
+                    </button>
+                </h2>
+                <div id="america" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Éder Álvarez Balanta, Yerson Candelo, Duván Vergara, Felipe Gómez, Álex Castro.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Edwin Cardona, Víctor Ibarbo, Gastón Sauro, Andrés Sarmiento, Edward López, John García.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUNIOR -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#junior">
+                        Junior de Barranquilla
+                    </button>
+                </h2>
+                <div id="junior" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Yovani Hernández, Jhon Lerma, Andrés Colorado, Yairo Moreno, Yani Quintero.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Vladimir Hernández, Johan Bocanegra, Omar Albornoz, Diego Mendoza, Brayan Ceballos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SANTA FE -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#santafe">
+                        Independiente Santa Fe
+                    </button>
+                </h2>
+                <div id="santafe" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Harold Santiago Mosquera, Edwar López, Jown Cardona, Vladimir Hernández, Omar Albornoz.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Frank Castañeda, Johan Torres, Jersson González, Francisco Chaverra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPORTIVO CALI -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#cali">
+                        Deportivo Cali
+                    </button>
+                </h2>
+                <div id="cali" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Martín Rea, Fabián Viáfara, Gastón Guruceaga, Rafael Bustamante, Cristian Graciano.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Joaquín Papaleo, Adrián Parra, Lautaro Villegas, Isaac Camargo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INDEPENDIENTE MEDELLÍN -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#dim">
+                        Independiente Medellín
+                    </button>
+                </h2>
+                <div id="dim" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Luis "Chino" Sandoval, Jersson González, Marcus Vinicius, Homer Martínez, Jherson Mosquera.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Jaime Peralta, Yairo Moreno, Anderson Plata, Jhon Palacios, Miguel Monsalve.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ONCE CALDAS -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#oncecaldas">
+                        Once Caldas
+                    </button>
+                </h2>
+                <div id="oncecaldas" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Lucas Ríos, Michael Barrios, Robert Mejía, Joel Contreras.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Mauricio Castaño, Gustavo Torres, David Lemos, Johar Mejía.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPORTES TOLIMA -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#tolima">
+                        Deportes Tolima
+                    </button>
+                </h2>
+                <div id="tolima" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Andrés Arroyo, Gustavo Adrián Ramírez, Jhon Castro, Franco López.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Lucas González, César Haydar, Julián Angulo, Kevin Pérez.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ATLÉTICO BUCARAMANGA -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#bucaramanga">
+                        Atlético Bucaramanga
+                    </button>
+                </h2>
+                <div id="bucaramanga" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong class="text-success">ALTAS:</strong> Johan Bocanegra, Larry Vásquez, Frank Castañeda, Adalberto Peñaranda, Esneyder Mena.</p>
+                        <p><strong class="text-danger">BAJAS:</strong> Misael Martínez, Fabio Delgado, Emanuel Zagert, Robert Henao.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÁS EQUIPOS DEL FPC -->
+            <div class="accordion-item bg-secondary text-white border-bottom border-dark">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark text-warning fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#masequipos">
+                        Otros Equipos del FPC
+                    </button>
+                </h2>
+                <div id="masequipos" class="accordion-collapse collapse" data-bs-parent="#accordionFichajes">
+                    <div class="accordion-body bg-dark text-light">
+                        <p><strong>Deportivo Pasto:</strong> Novedades incorporadas para encarar el semestre.</p>
+                        <p><strong>Deportivo Pereira:</strong> Reestructuración de plantilla tras salidas clave.</p>
+                        <p><strong>Fortaleza / Boyacá Chicó / Águilas Doradas / Alianza / Cúcuta / Jaguares / Llaneros:</strong> Fichajes de refresco y continuidad de base.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN REPLAYS
+=========================================== -->
+<section id="replays" class="py-5 bg-black">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-warning text-dark fs-6 mb-2">REVIVE LA EMOCIÓN</span>
+            <h2 class="display-5 fw-bold text-white">Transmisiones Anteriores</h2>
+            <p class="text-white-50">Revive las narraciones completas de partidos anteriores desde nuestro archivo</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-dark text-white border-secondary h-100 shadow">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://drive.google.com/file/d/1bwFpR91tXmgdAFPFwnV1HA_9ZsyrrwEi/preview" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold">América vs Millonarios</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-dark text-white border-secondary h-100 shadow">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://drive.google.com/file/d/1Ezr7mcwCA4wYXkfG5lvLNpV8piAkgA0H/preview" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold">Pasto vs Santa Fe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-dark text-white border-secondary h-100 shadow">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://drive.google.com/file/d/1CQ6RTTOJJXkvbBhTjJ2WACzKiE0U6Geq/preview" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold">Millonarios vs Santa Fe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-dark text-white border-secondary h-100 shadow">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://drive.google.com/file/d/1eEyryq4MbMidy2MlOvvBlyET3s5oBJDt/preview" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold">Santa Fe vs Cúcuta</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN DE TRANSMISIÓN EN VIVO CORREGIDA
+=========================================== -->
+<section id="transmision" class="py-5 bg-dark border-top border-danger border-3">
+    <div class="container">
+        <div class="text-center mb-4">
+            <span class="badge bg-danger fs-6 mb-2">🔴 SEÑAL DE AUDIO Y COBERTURA</span>
+            <h2 class="display-5 fw-bold text-white">Transmisión en Vivo</h2>
+            <p class="text-white-50">Sintoniza nuestra transmisión oficial a la hora del partido.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- REPRODUCTOR SUSTITUIDO POR AVISO OFICIAL CON LOS 3 INTEGRANTES -->
+            <div class="col-lg-8">
+                <div class="ratio ratio-16x9 shadow-lg rounded-4 overflow-hidden border border-danger position-relative bg-black">
+                    <img src="assets/img/imagen_el-desmarque_del_futbol.png" class="w-100 h-100" style="object-fit: cover; opacity: 0.35;" alt="Fondo Transmisión">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-4">
+                        <span class="badge bg-danger fs-5 px-3 py-2 mb-3 animate-pulse">⏳ TRANSMISIÓN OFFLINE</span>
+                        <h3 class="text-white fw-bold display-6">La transmisión comenzará el</h3>
+                        <h2 class="text-warning fw-bold display-5 my-1">Sábado 25 de Julio - 5:30 PM</h2>
+                        <p class="text-white-50 mt-2 fs-5">Millonarios FC vs Atlético Bucaramanga</p>
+                        <div class="mt-3 d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-dark border border-secondary text-light px-3 py-2">🎙️ Relata: Álvaro Malkún</span>
+                            <span class="badge bg-dark border border-secondary text-light px-3 py-2">⚽ Comenta: Jaime Vélez</span>
+                            <span class="badge bg-dark border border-secondary text-light px-3 py-2">🎧 Produce y Comenta: Mauricio Guerrero</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL REDES Y EQUIPO MÁS AMPLIO -->
+            <div class="col-lg-4">
+                <div class="card bg-black text-white border-secondary shadow-lg mb-4">
+                    <div class="card-header bg-danger fw-bold fs-5 py-3">
+                        🎙️ EQUIPO AL AIRE
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- ÁLVARO MALKÚN -->
+                        <div class="d-flex align-items-start gap-3 my-2">
+                            <img src="assets/img/ALVARO DESMARQUE DEL FUTBOL.png" alt="Álvaro Malkún" class="rounded-circle border border-warning shadow" style="width: 75px; height: 75px; object-fit: cover; flex-shrink: 0;">
+                            <div>
+                                <h5 class="mb-1 text-warning fw-bold">Álvaro Malkún Salazar</h5>
+                                <p class="mb-0 text-light small lh-sm">
+                                    <strong>Narrador Oficial:</strong> Más de 23 años acompañando a Millonarios y Santa Fe dentro y fuera del estadio.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr class="border-secondary my-3">
+
+                        <!-- JAIME VÉLEZ -->
+                        <div class="d-flex align-items-start gap-3 my-2">
+                            <img src="assets/img/JAIME EL DESMARQUE DEL FUTBOL.png" alt="Jaime Vélez" class="rounded-circle border border-warning shadow" style="width: 75px; height: 75px; object-fit: cover; flex-shrink: 0;">
+                            <div>
+                                <h5 class="mb-1 text-warning fw-bold">Jaime Vélez Pérez</h5>
+                                <p class="mb-0 text-light small lh-sm">
+                                    <strong>Comentarista:</strong> El Internacional, con el análisis táctico, objetivo y directo de cada jugada.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr class="border-secondary my-3">
+
+                        <!-- MAURICIO GUERRERO -->
+                        <div class="d-flex align-items-start gap-3 my-2">
+                            <img src="assets/img/ALLAN DESMARQUE DEL FUTBOL.png" alt="Mauricio Guerrero" class="rounded-circle border border-warning shadow" style="width: 75px; height: 75px; object-fit: cover; flex-shrink: 0;">
+                            <div>
+                                <h5 class="mb-1 text-warning fw-bold">Mauricio Guerrero</h5>
+                                <p class="mb-0 text-light small lh-sm">
+                                    <strong>Comentarista y Productor:</strong> El Guerrero del comentario y Producción general de la transmisión.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REDES SOCIALES CON ENLACE TIKTOK CORREGIDO -->
+                <div class="card bg-black text-white border-secondary shadow-lg">
+                    <div class="card-header bg-danger fw-bold fs-5 py-3">
+                        📲 SÍGUENOS EN REDES
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="d-grid gap-2">
+                            <a href="https://www.tiktok.com/@eldesmarquedelfutbol1" target="_blank" class="btn btn-dark border-secondary text-start text-white fw-bold py-2">🎵 TikTok (@eldesmarquedelfutbol1)</a>
+                            <a href="https://kick.com/eldesmarquedelfutbol" target="_blank" class="btn text-start fw-bold py-2" style="background-color: #53fc18; color: #000;">🟩 Kick</a>
+                            <a href="https://www.twitch.tv/eldesmarquedelfutbol" target="_blank" class="btn text-start text-white fw-bold py-2" style="background-color: #9146FF;">👾 Twitch</a>
+                            <a href="https://x.com/eldesmarquefut" target="_blank" class="btn btn-dark text-start border-secondary text-white fw-bold py-2">𝕏 Twitter / X</a>
+                            <a href="https://www.instagram.com/eldesmarquedelfutbol/" target="_blank" class="btn text-start text-white fw-bold py-2" style="background-color: #E1306C;">📸 Instagram</a>
+                            <a href="https://www.facebook.com/eldesmarquedelfutboloficial" target="_blank" class="btn btn-primary text-start fw-bold py-2">📘 Facebook</a>
+                            <a href="https://whatsapp.com/channel/0029VbCEpum6RGJDsc1QoT0o" target="_blank" class="btn text-start text-white fw-bold py-2" style="background-color: #25D366;">💬 Canal de WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN TABLA DE POSICIONES (DATOS EXACTOS CAPTURADOS)
+=========================================== -->
+<section id="tabla" class="py-5 bg-black">
+    <div class="container">
+        <div class="text-center mb-4">
+            <span class="badge bg-warning text-dark fs-6 mb-2">LIGA BETPLAY 2026-II</span>
+            <h2 class="display-5 fw-bold text-white">Tabla de Posiciones Oficial</h2>
+            <p class="text-white-50">Así va la tabla de posiciones en vivo durante el desarrollo de la Fecha 1</p>
+        </div>
+        
+        <div class="table-responsive bg-dark p-3 rounded-4 border border-secondary shadow-lg">
+            <table class="table table-dark table-striped table-hover align-middle mb-0 text-center">
+                <thead>
+                    <tr class="text-warning">
+                        <th>Pos</th>
+                        <th class="text-start">Equipo</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>DG</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <td>1</td>
+                        <td class="text-start fw-bold">🟢 Deportivo Cali</td>
+                        <td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td><td>+2</td><td class="fw-bold text-warning fs-5">3</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>2</td>
+                        <td class="text-start fw-bold">🟢 Llaneros</td>
+                        <td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>+1</td><td class="fw-bold text-warning fs-5">3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Águilas Doradas</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Junior</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Internacional de Bogotá</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Tolima</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Medellín</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Fortaleza</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr class="border-start border-4 border-warning">
+                        <td>3</td>
+                        <td class="text-start fw-bold text-warning">Millonarios</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="fw-bold text-warning">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Atlético Nacional</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr class="border-start border-4 border-warning">
+                        <td>3</td>
+                        <td class="text-start fw-bold text-warning">Bucaramanga</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="fw-bold text-warning">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Santa Fe</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Once Caldas</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Alianza</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Cúcuta</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Pasto</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">América</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-start">Boyacá Chicó</td>
+                        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="text-start">Deportivo Pereira</td>
+                        <td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>-1</td><td>0</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="text-start">Jaguares</td>
+                        <td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2</td><td>-2</td><td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <small class="text-white-50 d-block mt-3 text-center">Tabla de posiciones oficial de la Liga BetPlay Dimayor.</small>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN CALENDARIO (PROGRAMACIÓN COMPLETA FECHA 1)
+=========================================== -->
+<section id="calendario" class="py-5 bg-dark">
+    <div class="container">
+        <div class="text-center mb-4">
+            <span class="badge bg-danger fs-6 mb-2">FECHAS Y PROGRAMACIÓN</span>
+            <h2 class="display-5 fw-bold text-white">Calendario Liga Colombiana - Fecha 1</h2>
+            <p class="text-white-50">Fase de Grupos · Jornada 1 de 19</p>
+        </div>
+
+        <div class="row g-3">
+            
+            <!-- PARTIDO 1: LLANEROS VS PEREIRA (FINALIZADO) -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="fw-bold">Llaneros <span class="badge bg-success ms-1">1</span></div>
+                        <div class="text-white-50">Deportivo Pereira 🟥 <span class="badge bg-secondary ms-1">0</span></div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-secondary">Fin</span>
+                        <small class="d-block text-white-50 mt-1">Hoy</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 2: DEPORTIVO CALI VS JAGUARES (FINALIZADO) -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="fw-bold">Deportivo Cali <span class="badge bg-success ms-1">2</span></div>
+                        <div class="text-white-50">Jaguares <span class="badge bg-secondary ms-1">0</span></div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-secondary">Fin</span>
+                        <small class="d-block text-white-50 mt-1">Hoy</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 3: BOYACÁ CHICÓ VS ATLÉTICO NACIONAL -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div>Boyacá Chicó</div>
+                        <div class="fw-bold">Atlético Nacional</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-dark border border-secondary text-warning">Mañana</span>
+                        <small class="d-block text-white-50 mt-1">2:00 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 4: MEDELLÍN VS PASTO -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="fw-bold">Medellín</div>
+                        <div>Pasto</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-dark border border-secondary text-warning">Mañana</span>
+                        <small class="d-block text-white-50 mt-1">4:05 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 5: MILLONARIOS VS BUCARAMANGA (NUESTRA TRANSMISIÓN) -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-danger shadow text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="fw-bold text-warning">Millonarios FC</div>
+                        <div class="fw-bold text-warning">Bucaramanga</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-danger animate-pulse">🔴 EN VIVO 5:30 PM</span>
+                        <small class="d-block text-warning mt-1">Mañana 6:10 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 6: TOLIMA VS JUNIOR -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div>Tolima</div>
+                        <div>Junior</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-dark border border-secondary text-warning">Mañana</span>
+                        <small class="d-block text-white-50 mt-1">8:15 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 7: INTERNACIONAL DE BOGOTÁ VS AMÉRICA -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div>Internacional de Bogotá</div>
+                        <div class="fw-bold">América</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-secondary">Dom, 26/7</span>
+                        <small class="d-block text-white-50 mt-1">2:00 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 8: ÁGUILAS DORADAS VS SANTA FE -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div>Águilas Doradas</div>
+                        <div class="fw-bold">Santa Fe</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-secondary">Dom, 26/7</span>
+                        <small class="d-block text-white-50 mt-1">4:05 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 9: ALIANZA VS FORTALEZA -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div>Alianza</div>
+                        <div>Fortaleza</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-secondary">Dom, 26/7</span>
+                        <small class="d-block text-white-50 mt-1">6:10 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIDO 10: ONCE CALDAS VS CÚCUTA -->
+            <div class="col-md-6">
+                <div class="p-3 bg-black rounded-3 border border-secondary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <div>Once Caldas</div>
+                        <div>Cúcuta</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-secondary">Dom, 26/7</span>
+                        <small class="d-block text-white-50 mt-1">8:15 p. m.</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN PATROCINADORES
+=========================================== -->
+<section id="patrocinadores" class="py-5 bg-black border-top border-secondary">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-warning text-dark fs-6 mb-2">NUESTROS ALIADOS</span>
+            <h2 class="display-5 fw-bold text-white">Marcas que nos Apoyan</h2>
+        </div>
+
+        <div class="row justify-content-center align-items-center g-4">
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+                <div class="p-3 bg-dark rounded-4 border border-secondary shadow">
+                    <img src="assets/img/LART DE LA BEAUTÉ LOGO.jpeg" alt="L'art de la beauté" class="img-fluid rounded-circle p-2" style="max-height: 180px; width: 180px; object-fit: cover;">
+                    <h5 class="text-white fw-bold mt-3 mb-1">L'art de la beauté</h5>
+                    <small class="text-warning">Beauty Clinic & Spa</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+SECCIÓN CONTACTO
+=========================================== -->
+<section id="contacto" class="py-5 bg-dark border-top border-secondary">
+    <div class="container" style="max-width: 800px;">
+        <div class="text-center mb-4">
+            <span class="badge bg-danger fs-6 mb-2">ESCRÍBENOS</span>
+            <h2 class="display-5 fw-bold text-white">Ponte en Contacto</h2>
+        </div>
+
+        <div class="bg-black p-4 p-md-5 rounded-4 border border-secondary shadow-lg">
+            <form action="https://formsubmit.co/eldesmarquedelfutbol@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://eldesmarquedelfutbol.com/">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label text-white fw-bold">Nombre Completo</label>
+                    <input type="text" class="form-control bg-dark text-white border-secondary" id="nombre" name="Nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-white fw-bold">Correo Electrónico</label>
+                    <input type="email" class="form-control bg-dark text-white border-secondary" id="email" name="Correo" placeholder="tu@email.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label text-white fw-bold">Mensaje / Consulta de Pauta</label>
+                    <textarea class="form-control bg-dark text-white border-secondary" id="mensaje" name="Mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================
+FOOTER
+=========================================== -->
+<footer class="bg-black text-white text-center py-4 border-top border-secondary">
+    <div class="container">
+        <h4 class="fw-bold text-warning mb-2">El Desmarque del Fútbol</h4>
+        <p class="text-white-50 mb-3">La mejor cobertura deportiva con la pasión que siente el hincha.</p>
+        <div class="text-white-50 small">
+            &copy; 2026 El Desmarque del Fútbol. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
+"""
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("index.html guardado exitosamente.")
