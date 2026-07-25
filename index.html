@@ -52,12 +52,16 @@
         <h2 class="mb-3">Millonarios vs Bucaramanga — Transmisión en Vivo</h2>
         <p class="lead">Disfruta del análisis, narración y minuto a minuto del encuentro de la Liga BetPlay.</p>
 
-        <!-- Contenedor Reproductor (Twitch / Live Stream) -->
-        <div class="ratio ratio-16x9 my-4 rounded shadow">
-          <!-- Reemplazar el src con tu reproductor configurado -->
+        <!-- Contenedor Reproductor -->
+        <div class="ratio ratio-16x9 my-4 rounded shadow bg-black d-flex align-items-center justify-content-center">
+          <!-- NOTA REPRODUCTOR: 
+               Para habilitar Twitch, reemplaza CANAL_TWITCH por el nombre de usuario de Twitch 
+               y TU_DOMINIO por la URL donde publicas la página (ej: tuusuario.github.io).
+          -->
           <iframe 
-            src="https://player.twitch.tv/?channel=TU_CANAL&parent=localhost" 
-            allowfullscreen>
+            src="https://player.twitch.tv/?channel=CANAL_TWITCH&parent=TU_DOMINIO" 
+            allowfullscreen 
+            style="border:none; width:100%; height:100%;">
           </iframe>
         </div>
       </div>
