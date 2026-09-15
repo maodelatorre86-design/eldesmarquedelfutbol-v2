@@ -68,12 +68,25 @@ MENÚ PRINCIPAL
 </nav>
 
 <!-- ==========================================
-ESTILOS DEL TICKER / TABLERO ANIMADO
+FAVICON (LOGO EN LA PESTAÑA DEL NAVEGADOR)
+=========================================== -->
+<link rel="icon" type="image/png" href="assets/img/imagen_el-desmarque_del_futbol.png">
+
+<!-- ==========================================
+ESTILOS GLOBALES Y DEL TICKER / TABLERO ANIMADO
 =========================================== -->
 <style>
+    /* Forzar fondo totalmente negro sin espacios blancos */
+    html, body {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        margin: 0;
+        padding: 0;
+    }
+
     .ticker {
-        background-color: #000;
-        color: #fff;
+        background-color: #000000;
+        color: #ffffff;
         overflow: hidden;
         white-space: nowrap;
         box-sizing: border-box;
@@ -130,7 +143,7 @@ TICKER ANIMADO (TABLERO ELECTRÓNICO)
 <!-- ==========================================
 HERO PRINCIPAL (OPTIMIZADO PARA MÓVILES Y SEO)
 =========================================== -->
-<section id="inicio" class="container-fluid py-3 py-md-4">
+<section id="inicio" class="container-fluid py-3 py-md-4 bg-black">
     <!-- BANNER DE SOLIDARIDAD -->
     <div class="row mb-3">
         <div class="col-12">
