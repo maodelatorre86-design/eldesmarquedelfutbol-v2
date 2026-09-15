@@ -68,7 +68,48 @@ MENÚ PRINCIPAL
 </nav>
 
 <!-- ==========================================
-TICKER ANIMADO
+ESTILOS DEL TICKER / TABLERO ANIMADO
+=========================================== -->
+<style>
+    .ticker {
+        background-color: #000;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        padding: 10px 0;
+        border-bottom: 2px solid #dc3545;
+    }
+
+    .ticker-wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .ticker-move {
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 100%;
+        animation: ticker-anim 30s linear infinite;
+    }
+
+    @keyframes ticker-anim {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+
+    /* Pausa el movimiento al pasar el ratón por encima */
+    .ticker-wrap:hover .ticker-move {
+        animation-play-state: paused;
+    }
+</style>
+
+<!-- ==========================================
+TICKER ANIMADO (TABLERO ELECTRÓNICO)
 =========================================== -->
 <section class="ticker">
     <div class="ticker-wrap">
