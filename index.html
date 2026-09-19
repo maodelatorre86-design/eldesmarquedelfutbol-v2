@@ -5,38 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Título Primario SEO -->
+    <!-- Título y SEO -->
     <title>Fortaleza CEIF vs Junior de Barranquilla En Vivo Online - Liga BetPlay, En Directo</title>
-    
-    <!-- Metadatos SEO Principal -->
-    <meta name="description" content="Sigue En Vivo Online y En Directo el partido Fortaleza CEIF vs Junior de Barranquilla por la Liga BetPlay. Transmisión en tiempo real con relatos y comentarios de El Desmarque del Fútbol.">
-    <meta name="keywords" content="Fortaleza CEIF vs Junior, Junior de Barranquilla en vivo, Fortaleza CEIF en directo, Liga BetPlay en vivo, ver futbol colombia online, El Desmarque del Futbol">
+    <meta name="description" content="Sigue En Vivo Online y En Directo el partido Fortaleza CEIF vs Junior de Barranquilla por la Liga BetPlay.">
+    <meta name="keywords" content="Fortaleza CEIF vs Junior, Junior en vivo, Liga BetPlay en directo, El Desmarque del Futbol">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="El Desmarque del Fútbol">
 
-    <!-- Open Graph / Facebook -->
+    <!-- PRECARGA DE LA IMAGEN PRINCIPAL (Máxima velocidad) -->
+    <link rel="preload" as="image" href="assets/img/imagen_el-desmarque_del_futbol.png">
+
+    <!-- Open Graph & Favicons -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://eldesmarquedelfutbol.com/transmision-en-vivo">
-    <meta property="og:title" content="Fortaleza CEIF vs Junior de Barranquilla En Vivo Online - Liga BetPlay">
-    <meta property="og:description" content="Transmisión EN DIRECTO del partido entre Fortaleza CEIF y Junior de Barranquilla por la Liga BetPlay. Conéctate a la transmisión oficial.">
+    <meta property="og:title" content="Fortaleza CEIF vs Junior de Barranquilla En Vivo Online">
     <meta property="og:image" content="assets/img/imagen_el-desmarque_del_futbol.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Fortaleza CEIF vs Junior EN VIVO - Liga BetPlay">
-    <meta property="twitter:description" content="Sigue la transmisión en directo online del choque entre Fortaleza CEIF y Junior de Barranquilla.">
-    <meta property="twitter:image" content="assets/img/imagen_el-desmarque_del_futbol.png">
-
-    <!-- FAVICON / LOGO EN LA PESTAÑA DEL NAVEGADOR -->
     <link rel="icon" type="image/png" href="assets/img/imagen_el-desmarque_del_futbol.png">
-    <link rel="shortcut icon" href="assets/img/imagen_el-desmarque_del_futbol.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/img/imagen_el-desmarque_del_futbol.png">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ESTILOS DE OPTIMIZACIÓN DE RENDIMIENTO -->
+    <style>
+        html, body {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Posterga el renderizado de secciones pesadas hasta hacer scroll */
+        #calendario, #transmision {
+            content-visibility: auto;
+            contain-intrinsic-size: 800px;
+        }
+    </style>
 </head>
     
 <!-- ==========================================
