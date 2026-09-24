@@ -54,19 +54,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Datos Estructurados Schema.org (Evento Deportivo Dinámico) -->
+    <!-- Datos Estructurados Schema.org (Evento Deportivo Corregido) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SportsEvent",
       "name": "Atlético Nacional vs Millonarios",
       "description": "Transmisión en vivo del partido Atlético Nacional vs Millonarios por la Liga BetPlay Dimayor.",
+      "image": [
+        "https://eldesmarquedelfutbol.com/assets/img/imagen_el-desmarque_del_futbol.png"
+      ],
+      "startDate": "2026-09-24T19:30:00-05:00",
+      "endDate": "2026-09-24T21:30:00-05:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
         "name": "Estadio Atanasio Girardot",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Medellín",
+          "addressRegion": "Antioquia",
           "addressCountry": "CO"
         }
       },
@@ -77,6 +85,24 @@
       "awayTeam": {
         "@type": "SportsTeam",
         "name": "Millonarios FC"
+      },
+      "performer": [
+        {
+          "@type": "SportsTeam",
+          "name": "Atlético Nacional"
+        },
+        {
+          "@type": "SportsTeam",
+          "name": "Millonarios FC"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://eldesmarquedelfutbol.com/",
+        "price": "0",
+        "priceCurrency": "COP",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-09-24T00:00:00-05:00"
       },
       "organizer": {
         "@type": "Organization",
