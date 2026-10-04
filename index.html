@@ -719,60 +719,167 @@ SECCIÓN NOTICIAS (ALTAS Y BAJAS ACTUALIZADAS EXAC)
 </section>
 
 <!-- ==========================================
-SECCIÓN REPLAYS
+SECCIÓN REPLAYS / TRANSMISIONES ANTERIORES
 =========================================== -->
-<section id="replays" class="py-5 bg-black">
+<section id="replays" class="py-5 bg-dark text-white border-top border-secondary">
     <div class="container">
-        <div class="text-center mb-5">
-            <span class="badge bg-warning text-dark fs-6 mb-2">REVIVE LA EMOCIÓN</span>
-            <h2 class="display-5 fw-bold text-white">Transmisiones Anteriores</h2>
-            <p class="text-white-50">Revive las narraciones completas de partidos anteriores desde nuestro archivo</p>
+        <div class="text-center mb-4">
+            <span class="badge bg-success text-dark fs-6 mb-2">BIBLIOTECA DE PARTIDOS</span>
+            <h2 class="display-6 fw-bold">Replays & Transmisiones Pasadas</h2>
+            <p class="text-white-50">Revive las transmisiones completas y la narración en vivo de El Desmarque del Fútbol.</p>
         </div>
 
         <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100 shadow">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1bwFpR91tXmgdAFPFwnV1HA_9ZsyrrwEi/preview" allow="autoplay" allowfullscreen></iframe>
+            <!-- TARJETA REPLAY 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-black border-secondary text-white shadow-sm h-100 overflow-hidden">
+                    <div class="position-relative cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalReplay1" style="cursor: pointer;">
+                        <img src="https://v01.kick.com/video/01a0f4ec-6440-71fe-a7dc-776239599648/thumbnail.jpg" class="card-img-top img-fluid" alt="Replay El Desmarque del Fútbol" onerror="this.src='https://via.placeholder.com/600x338/111/107c41?text=El+Desmarque+del+Fútbol+VOD';">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                            <div class="bg-success text-dark rounded-circle d-flex align-items-center justify-content-center shadow-lg" style="width: 60px; height: 60px;">
+                                <i class="fs-3 fw-bold">▶</i>
+                            </div>
+                        </div>
+                        <span class="position-absolute bottom-0 end-0 bg-dark text-warning px-2 py-1 m-2 rounded small fw-bold">REPLAY KICK</span>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-warning fw-bold">América vs Millonarios</h5>
+
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-danger mb-2">EN VIVO KICK</span>
+                            <h5 class="card-title fw-bold mb-1">Transmisión en Vivo #1</h5>
+                            <p class="card-text text-white-50 small">Revive la narración y análisis completo del partido.</p>
+                        </div>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#modalReplay1">
+                                ▶ Ver aquí en la Web
+                            </button>
+                            <a href="https://kick.com/eldesmarquedelfutbol/videos/01a0f4ec-6440-71fe-a7dc-776239599648" target="_blank" class="btn btn-outline-light btn-sm fw-bold">
+                                🔗 Abrir en Kick.com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100 shadow">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1Ezr7mcwCA4wYXkfG5lvLNpV8piAkgA0H/preview" allow="autoplay" allowfullscreen></iframe>
+
+            <!-- TARJETA REPLAY 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-black border-secondary text-white shadow-sm h-100 overflow-hidden">
+                    <div class="position-relative cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalReplay2" style="cursor: pointer;">
+                        <img src="https://v01.kick.com/video/01a0efc0-8a00-7af0-9640-8e30aa08d4d7/thumbnail.jpg" class="card-img-top img-fluid" alt="Replay El Desmarque del Fútbol" onerror="this.src='https://via.placeholder.com/600x338/111/107c41?text=El+Desmarque+del+Fútbol+VOD';">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                            <div class="bg-success text-dark rounded-circle d-flex align-items-center justify-content-center shadow-lg" style="width: 60px; height: 60px;">
+                                <i class="fs-3 fw-bold">▶</i>
+                            </div>
+                        </div>
+                        <span class="position-absolute bottom-0 end-0 bg-dark text-warning px-2 py-1 m-2 rounded small fw-bold">REPLAY KICK</span>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-warning fw-bold">Pasto vs Santa Fe</h5>
+
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-danger mb-2">EN VIVO KICK</span>
+                            <h5 class="card-title fw-bold mb-1">Transmisión en Vivo #2</h5>
+                            <p class="card-text text-white-50 small">Revive la narración y análisis completo del partido.</p>
+                        </div>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#modalReplay2">
+                                ▶ Ver aquí en la Web
+                            </button>
+                            <a href="https://kick.com/eldesmarquedelfutbol/videos/01a0efc0-8a00-7af0-9640-8e30aa08d4d7" target="_blank" class="btn btn-outline-light btn-sm fw-bold">
+                                🔗 Abrir en Kick.com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100 shadow">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1CQ6RTTOJJXkvbBhTjJ2WACzKiE0U6Geq/preview" allow="autoplay" allowfullscreen></iframe>
+
+            <!-- TARJETA REPLAY 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-black border-secondary text-white shadow-sm h-100 overflow-hidden">
+                    <div class="position-relative cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalReplay3" style="cursor: pointer;">
+                        <img src="https://v01.kick.com/video/01a0eed0-a008-792f-bf4a-ee5697cca7b3/thumbnail.jpg" class="card-img-top img-fluid" alt="Replay El Desmarque del Fútbol" onerror="this.src='https://via.placeholder.com/600x338/111/107c41?text=El+Desmarque+del+Fútbol+VOD';">
+                        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                            <div class="bg-success text-dark rounded-circle d-flex align-items-center justify-content-center shadow-lg" style="width: 60px; height: 60px;">
+                                <i class="fs-3 fw-bold">▶</i>
+                            </div>
+                        </div>
+                        <span class="position-absolute bottom-0 end-0 bg-dark text-warning px-2 py-1 m-2 rounded small fw-bold">REPLAY KICK</span>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-warning fw-bold">Millonarios vs Santa Fe</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card bg-dark text-white border-secondary h-100 shadow">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1eEyryq4MbMidy2MlOvvBlyET3s5oBJDt/preview" allow="autoplay" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-warning fw-bold">Santa Fe vs Cúcuta</h5>
+
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-danger mb-2">EN VIVO KICK</span>
+                            <h5 class="card-title fw-bold mb-1">Transmisión en Vivo #3</h5>
+                            <p class="card-text text-white-50 small">Revive la narración y análisis completo del partido.</p>
+                        </div>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#modalReplay3">
+                                ▶ Ver aquí en la Web
+                            </button>
+                            <a href="https://kick.com/eldesmarquedelfutbol/videos/01a0eed0-a008-792f-bf4a-ee5697cca7b3" target="_blank" class="btn btn-outline-light btn-sm fw-bold">
+                                🔗 Abrir en Kick.com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- ==========================================
+VENTANAS MODALES PARA REPRODUCIR VODs DE KICK
+=========================================== -->
+
+<!-- MODAL REPLAY 1 -->
+<div class="modal fade" id="modalReplay1" tabindex="-1" aria-labelledby="modalReplay1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold text-success" id="modalReplay1Label">El Desmarque del Fútbol - Replay #1</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://player.kick.com/eldesmarquedelfutbol?video=01a0f4ec-6440-71fe-a7dc-776239599648" allowfullscreen frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL REPLAY 2 -->
+<div class="modal fade" id="modalReplay2" tabindex="-1" aria-labelledby="modalReplay2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold text-success" id="modalReplay2Label">El Desmarque del Fútbol - Replay #2</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://player.kick.com/eldesmarquedelfutbol?video=01a0efc0-8a00-7af0-9640-8e30aa08d4d7" allowfullscreen frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL REPLAY 3 -->
+<div class="modal fade" id="modalReplay3" tabindex="-1" aria-labelledby="modalReplay3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold text-success" id="modalReplay3Label">El Desmarque del Fútbol - Replay #3</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://player.kick.com/eldesmarquedelfutbol?video=01a0eed0-a008-792f-bf4a-ee5697cca7b3" allowfullscreen frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- ==========================================
 SECCIÓN DE TRANSMISIÓN EN VIVO CON REPRODUCTOR KICK
