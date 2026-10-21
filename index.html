@@ -1078,32 +1078,34 @@ SECCIÓN DE TRANSMISIÓN EN VIVO CON REPRODUCTOR KICK
 <!-- ==========================================
 SECCIÓN REPRODUCTOR DE AUDIO EN VIVO (CASTER.FM)
 =========================================== -->
-<section id="audio-en-vivo" class="container py-4">
-    <div class="card bg-dark border-warning text-white shadow-lg rounded-3 p-3 p-md-4">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-            
-            <!-- Detalles del evento de audio -->
-            <div class="d-flex align-items-center gap-3">
-                <div class="bg-warning text-dark p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; flex-shrink: 0;">
-                    <span class="spinner-grow spinner-grow-sm text-dark" role="status" aria-hidden="true"></span>
+<section id="audio-envivo" class="py-5 bg-black text-white border-top border-secondary">
+    <div class="container">
+        <div class="card bg-dark border-warning text-white shadow-lg rounded-3 p-3 p-md-4">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                
+                <!-- Detalles del evento de audio -->
+                <div class="d-flex align-items-center gap-3">
+                    <div class="bg-warning text-dark p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; flex-shrink: 0;">
+                        <span class="spinner-grow spinner-grow-sm text-dark" role="status" aria-hidden="true"></span>
+                    </div>
+                    <div>
+                        <span class="badge bg-warning text-dark text-uppercase mb-1 fw-bold">📻 Radio En Vivo</span>
+                        <h3 class="h4 fw-bold mb-1 text-white">Millonarios vs. Once Caldas</h3>
+                        <p class="small text-white-50 mb-0">Escucha la narración sin interrupciones con nuestro audio en vivo. No es necesario que dejes encendida la pantalla.</p>
+                    </div>
                 </div>
-                <div>
-                    <span class="badge bg-warning text-dark text-uppercase mb-1 fw-bold">📻 Radio En Vivo</span>
-                    <h4 class="fw-bold mb-0">Millonarios vs. Once Caldas</h4>
-                    <small class="text-white-50">Escucha la narración sin interrupciones con nuestro audio en vivo. No es necesario que dejes encendida la pantalla</small>
-                </div>
-            </div>
 
-            <!-- Contenedor Oficial del Reproductor de Caster.fm -->
-            <div class="w-100 w-md-50 bg-white p-2 rounded overflow-hidden shadow">
-                <div data-type="newStreamPlayer" data-publicToken="0b642816-b785-411c-9beb-d8237211e7d0" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed">
-                    <a href="https://www.caster.fm">Shoutcast Hosting</a> 
-                    <a href="https://www.caster.fm">Stream Hosting</a> 
-                    <a href="https://www.caster.fm">Radio Server Hosting</a>
+                <!-- Contenedor Oficial del Reproductor de Caster.fm -->
+                <div class="w-100 w-md-50 bg-white p-2 rounded overflow-hidden shadow">
+                    <div data-type="newStreamPlayer" data-publicToken="0b642816-b785-411c-9beb-d8237211e7d0" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed">
+                        <a href="https://www.caster.fm">Shoutcast Hosting</a> 
+                        <a href="https://www.caster.fm">Stream Hosting</a> 
+                        <a href="https://www.caster.fm">Radio Server Hosting</a>
+                    </div>
+                    <script src="https://cdn.cloud.caster.fm/widgets/embed.js"></script>
                 </div>
-                <script src="https://cdn.cloud.caster.fm/widgets/embed.js"></script>
-            </div>
 
+            </div>
         </div>
     </div>
 </section>
