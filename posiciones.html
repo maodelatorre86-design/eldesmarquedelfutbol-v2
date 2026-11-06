@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Posiciones - El Desmarque del Fútbol</title>
+    <meta name="description" content="Tabla de posiciones oficial de la Liga BetPlay 2026-II. Resultados, puntos y estadísticas del FPC en vivo.">
+    
+    <!-- FAVICON (LOGO EN LA PESTAÑA DEL NAVEGADOR) -->
+    <link rel="icon" type="image/png" href="assets/img/El%20Desmarque%20del%20F%C3%BAtbol.png">
+
+    <!-- Preconexiones y Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Estilos personalizados para los círculos de resultados -->
+    <style>
+        .badge-result {
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .res-win { background-color: #198754; } /* Verde - Victoria */
+        .res-draw { background-color: #6c757d; } /* Gris - Empate */
+        .res-loss { background-color: #dc3545; } /* Rojo - Derrota */
+    </style>
+</head>
+<body class="bg-dark text-white">
+
+    <!-- MENÚ PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html#inicio">
+                <img src="assets/img/El%20Desmarque%20del%20F%C3%BAtbol.png" alt="El Desmarque del Fútbol" width="45" height="45" class="rounded-circle border border-danger shadow object-fit-cover">
+                <span class="badge bg-danger text-white fs-6 px-3 py-2 d-none d-sm-inline-block shadow-sm">
+                    🔴 Liga BetPlay En Vivo: Cúcuta vs...
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#replays">Replays</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold bg-danger bg-opacity-10 rounded px-3 border border-danger" href="index.html#transmision">
+                            🔴 EN VIVO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold bg-warning bg-opacity-10 rounded px-3 border border-warning" href="index.html#audio-envivo">
+                            📻 Audio en Vivo
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active text-warning fw-bold" href="posiciones.html">Tabla</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#calendario">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#patrocinadores">Patrocinadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO DE LA SECCIÓN -->
+    <header class="py-5 bg-black border-bottom border-secondary text-center">
+        <div class="container">
+            <span class="badge bg-warning text-dark fs-6 mb-2">LIGA BETPLAY 2026-II</span>
+            <h1 class="display-4 fw-bold text-white">Tabla de Posiciones</h1>
+            <p class="text-white-50 lead mx-auto" style="max-width: 600px;">
+                Así marcha el todos contra todos del fútbol profesional colombiano fecha a fecha.
+            </p>
+        </div>
+    </header>
+
+    <!-- CONTENIDO DE LA TABLA -->
+    <main class="container py-5">
+        <div class="card bg-black border-secondary shadow-lg text-white">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover align-middle mb-0">
+                        <thead class="table-secondary text-dark fw-bold border-bottom border-secondary">
+                            <tr>
+                                <th class="py-3 ps-3">#</th>
+                                <th class="py-3">Club</th>
+                                <th class="py-3 text-center">PJ</th>
+                                <th class="py-3 text-center">G</th>
+                                <th class="py-3 text-center">E</th>
+                                <th class="py-3 text-center">P</th>
+                                <th class="py-3 text-center">GF</th>
+                                <th class="py-3 text-center">GC</th>
+                                <th class="py-3 text-center">DG</th>
+                                <th class="py-3 text-center text-warning">Pts</th>
+                                <th class="py-3 text-center pe-3">Últimos 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 1. Atlético Nacional -->
+                            <tr class="border-bottom border-secondary bg-success bg-opacity-10">
+                                <td class="ps-3 fw-bold text-success">1</td>
+                                <td class="fw-bold">Atlético Nacional</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">11</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">33</td>
+                                <td class="text-center">14</td>
+                                <td class="text-center text-success fw-bold">+19</td>
+                                <td class="text-center fw-bold text-warning fs-5">36</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 2. América -->
+                            <tr class="border-bottom border-secondary bg-success bg-opacity-10">
+                                <td class="ps-3 fw-bold text-success">2</td>
+                                <td class="fw-bold">América de Cali</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">10</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">31</td>
+                                <td class="text-center">12</td>
+                                <td class="text-center text-success fw-bold">+19</td>
+                                <td class="text-center fw-bold text-warning fs-5">35</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 3. Deportivo Cali -->
+                            <tr class="border-bottom border-secondary bg-success bg-opacity-10">
+                                <td class="ps-3 fw-bold text-success">3</td>
+                                <td class="fw-bold">Deportivo Cali</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">9</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">26</td>
+                                <td class="text-center">10</td>
+                                <td class="text-center text-success fw-bold">+16</td>
+                                <td class="text-center fw-bold text-warning fs-5">33</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 4. Bucaramanga -->
+                            <tr class="border-bottom border-secondary bg-success bg-opacity-10">
+                                <td class="ps-3 fw-bold text-success">4</td>
+                                <td class="fw-bold">Bucaramanga</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">8</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">26</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center text-success fw-bold">+9</td>
+                                <td class="text-center fw-bold text-warning fs-5">29</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 5. Santa Fe -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3 fw-bold text-info">5</td>
+                                <td>Santa Fe</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">8</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">23</td>
+                                <td class="text-center">18</td>
+                                <td class="text-center text-success">+5</td>
+                                <td class="text-center fw-bold fs-5">28</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 6. Millonarios -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3 fw-bold text-info">6</td>
+                                <td>Millonarios</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">9</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">24</td>
+                                <td class="text-center">14</td>
+                                <td class="text-center text-success">+10</td>
+                                <td class="text-center fw-bold fs-5">27</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-draw">-</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 7. Medellín -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3 fw-bold text-info">7</td>
+                                <td>Medellín</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">8</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center">0</td>
+                                <td class="text-center fw-bold fs-5">26</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 8. Águilas Doradas -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3 fw-bold text-info">8</td>
+                                <td>Águilas Doradas</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">22</td>
+                                <td class="text-center">20</td>
+                                <td class="text-center text-success">+2</td>
+                                <td class="text-center fw-bold fs-5">25</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 9. Once Caldas -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">9</td>
+                                <td>Once Caldas</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">21</td>
+                                <td class="text-center">18</td>
+                                <td class="text-center text-success">+3</td>
+                                <td class="text-center fw-bold fs-5">24</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 10. Cúcuta -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">10</td>
+                                <td>Cúcuta Deportivo</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">19</td>
+                                <td class="text-center">24</td>
+                                <td class="text-center text-danger">-5</td>
+                                <td class="text-center fw-bold fs-5">24</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 11. Tolima -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">11</td>
+                                <td>Deportes Tolima</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">21</td>
+                                <td class="text-center">20</td>
+                                <td class="text-center text-success">+1</td>
+                                <td class="text-center fw-bold fs-5">23</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 12. Internacional -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">12</td>
+                                <td>Internacional de Bogotá</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">8</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">21</td>
+                                <td class="text-center">23</td>
+                                <td class="text-center text-danger">-2</td>
+                                <td class="text-center fw-bold fs-5">20</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 13. Llaneros -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">13</td>
+                                <td>Llaneros FC</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">9</td>
+                                <td class="text-center">19</td>
+                                <td class="text-center">23</td>
+                                <td class="text-center text-danger">-4</td>
+                                <td class="text-center fw-bold fs-5">20</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 14. Alianza -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">14</td>
+                                <td>Alianza FC</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">9</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">29</td>
+                                <td class="text-center text-danger">-12</td>
+                                <td class="text-center fw-bold fs-5">18</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 15. Deportivo Pereira -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">15</td>
+                                <td>Deportivo Pereira</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">8</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">13</td>
+                                <td class="text-center">22</td>
+                                <td class="text-center text-danger">-9</td>
+                                <td class="text-center fw-bold fs-5">17</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 16. Junior -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">16</td>
+                                <td>Junior de Barranquilla</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">23</td>
+                                <td class="text-center">27</td>
+                                <td class="text-center text-danger">-4</td>
+                                <td class="text-center fw-bold fs-5">16</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 17. Boyacá Chicó -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">17</td>
+                                <td>Boyacá Chicó</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">9</td>
+                                <td class="text-center">13</td>
+                                <td class="text-center">28</td>
+                                <td class="text-center text-danger">-15</td>
+                                <td class="text-center fw-bold fs-5">16</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 18. Pasto -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">18</td>
+                                <td>Deportivo Pasto</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">10</td>
+                                <td class="text-center">13</td>
+                                <td class="text-center">24</td>
+                                <td class="text-center text-danger">-11</td>
+                                <td class="text-center fw-bold fs-5">15</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 19. Jaguares -->
+                            <tr class="border-bottom border-secondary">
+                                <td class="ps-3">19</td>
+                                <td>Jaguares de Córdoba</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">10</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">31</td>
+                                <td class="text-center text-danger">-14</td>
+                                <td class="text-center fw-bold fs-5">13</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-win">✔</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 20. Fortaleza -->
+                            <tr class="bg-danger bg-opacity-10">
+                                <td class="ps-3">20</td>
+                                <td>Fortaleza CEIF</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">9</td>
+                                <td class="text-center">7</td>
+                                <td class="text-center">17</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center text-danger">-8</td>
+                                <td class="text-center fw-bold fs-5">12</td>
+                                <td class="text-center pe-3">
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-draw">-</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                        <span class="badge-result res-loss">✕</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leyenda informativa -->
+        <div class="mt-4 text-white-50 small d-flex flex-wrap gap-4 align-items-center justify-content-center">
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge-result res-win">✔</span> Victoria
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge-result res-draw">-</span> Empate
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge-result res-loss">✕</span> Derrota
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-success bg-opacity-25 text-success px-2 py-1 border border-success">Clasificados parciales</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER LEGAL -->
+    <footer class="bg-black text-white text-center py-4 border-top border-secondary mt-5">
+        <div class="container">
+            <h4 class="fw-bold text-warning mb-2">El Desmarque del Fútbol</h4>
+            <p class="text-white-50 mb-3">La mejor cobertura deportiva con la pasión que siente el hincha.</p>
+            <div class="mb-3">
+                <a href="politica-de-privacidad.html" class="text-white-50 text-decoration-none small me-3">Política de Privacidad</a>
+                <span class="text-white-50">·</span>
+                <a href="terminos-y-condiciones.html" class="text-white-50 text-decoration-none small mx-3">Términos y Condiciones</a>
+                <span class="text-white-50">·</span>
+                <a href="index.html#contacto" class="text-white-50 text-decoration-none small ms-3">Contacto</a>
+            </div>
+            <div class="text-white-50 small">&copy; 2026 El Desmarque del Fútbol. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
