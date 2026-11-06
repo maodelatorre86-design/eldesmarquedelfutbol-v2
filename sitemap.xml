@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://eldesmarquedelfutbol.com/</loc>
-    <lastmod>2026-11-04T10:08:00-05:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+    <!-- Página Principal -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/index.html</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Centro de Noticias -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Tabla de Posiciones -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/posiciones.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Calendario -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/calendario.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Artículos de Noticias -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/medellin-problemas-fortaleza.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/cuentas-cuadrangulares-liga.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/liga-betplay-top-20-mundial.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/cucuta-asegura-categoria-cuadrangulares.html</loc>
+        <priority>0.8</priority>
+    </url>
 </urlset>
