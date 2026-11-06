@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://eldesmarquedelfutbol.com/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>El Desmarque del Fútbol</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T10:24:00-05:00</news:publication_date>
-      <news:title>Doble jornada en vivo: Cúcuta vs Santa Fe y Millonarios vs América por la fecha 17 de la Liga BetPlay</news:title>
-    </news:news>
-  </url>
+    
+    <!-- Noticia 1: Medellín vs Fortaleza -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/medellin-problemas-fortaleza.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>El Desmarque del Fútbol</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2026-11-06T08:00:00Z</news:publication_date>
+            <news:title>Independiente Medellín con problemas para visitar a Fortaleza por la fecha 18</news:title>
+        </news:news>
+    </url>
+
+    <!-- Noticia 2: Cuentas cuadrangulares -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/cuentas-cuadrangulares-liga.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>El Desmarque del Fútbol</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2026-11-06T07:30:00Z</news:publication_date>
+            <news:title>Calculadora en mano: las cuentas de infarto para clasificar a los cuadrangulares</news:title>
+        </news:news>
+    </url>
+
+    <!-- Noticia 3: Top 20 mundial OPTA -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/liga-betplay-top-20-mundial.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>El Desmarque del Fútbol</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2026-11-06T06:00:00Z</news:publication_date>
+            <news:title>¡Orgullo patrio! La Liga BetPlay entra al selecto Top 20 de las mejores del mundo</news:title>
+        </news:news>
+    </url>
+
+    <!-- Noticia 4: Cúcuta Deportivo -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/cucuta-asegura-categoria-cuadrangulares.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>El Desmarque del Fútbol</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2026-11-06T05:00:00Z</news:publication_date>
+            <news:title>Misión cumplida... Cúcuta asegura la categoría y va por los cuadrangulares</news:title>
+        </news:news>
+    </url>
+
 </urlset>
