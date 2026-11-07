@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
+    <!-- Noticia NUEVA: Previa América vs Cali -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/previa-america-vs-cali-fecha-18.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>El Desmarque del Fútbol</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2026-11-06T18:30:00Z</news:publication_date>
+            <news:title>Todo listo para el clásico: América de Cali y Deportivo Cali definen sus cartas</news:title>
+        </news:news>
+    </url>
+
     <!-- Noticia 1: Medellín vs Fortaleza -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias/medellin-problemas-fortaleza.html</loc>
