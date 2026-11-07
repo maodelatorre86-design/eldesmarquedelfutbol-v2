@@ -28,6 +28,13 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Replays y Transmisiones Anteriores -->
+    <url>
+        <loc>https://www.eldesmarquedelfutbol.com/replays.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
     <!-- Artículos de Noticias -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias/medellin-problemas-fortaleza.html</loc>
