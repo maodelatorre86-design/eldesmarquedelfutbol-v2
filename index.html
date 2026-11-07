@@ -239,41 +239,79 @@
 <body>
     
 <!-- ==========================================
-MENÚ PRINCIPAL
+MENÚ PRINCIPAL SUPERIOR (ESCRITORIO Y CABECERA MÓVIL)
 =========================================== -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-danger">
     <div class="container">
-        <a class="navbar-brand" href="index.html#inicio">
-            <!-- NUEVO LOGO ACTUALIZADO -->
-            <img src="assets/img/El Desmarque del Fútbol.png" alt="El Desmarque del Fútbol" height="70">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html#inicio">
+            <!-- LOGO CIRCULAR ESTANDARIZADO -->
+            <img src="assets/img/El%20Desmarque%20del%20F%C3%BAtbol.png" alt="El Desmarque del Fútbol" width="45" height="45" class="rounded-circle border border-danger shadow object-fit-cover">
+            <span class="badge bg-danger text-white fs-6 px-3 py-2 d-none d-sm-inline-block shadow-sm">
+                🔴 Liga BetPlay En Vivo
+            </span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+        <!-- BOTÓN HAMBURGUESA (OCULTO EN MÓVILES YA QUE SE USA EL NAV INFERIOR) -->
+        <button class="navbar-toggler d-none d-lg-block" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- NAVEGACIÓN COMPLETA PARA ESCRITORIO -->
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
                 <li class="nav-item"><a class="nav-link active" href="index.html#inicio">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
                 <li class="nav-item"><a class="nav-link" href="replays.html">Replays</a></li>
                 <li class="nav-item">
-                    <a class="nav-link text-danger fw-bold bg-danger bg-opacity-10 rounded px-3 border border-danger" href="#transmision">
+                    <a class="nav-link text-danger fw-bold bg-danger bg-opacity-10 rounded px-3 border border-danger" href="index.html#transmision">
                         🔴 EN VIVO
                     </a>
                 </li>
-                <!-- NUEVA SECCIÓN: AUDIO EN VIVO -->
                 <li class="nav-item">
-                    <a class="nav-link text-warning fw-bold bg-warning bg-opacity-10 rounded px-3 border border-warning" href="#audio-envivo">
+                    <a class="nav-link text-warning fw-bold bg-warning bg-opacity-10 rounded px-3 border border-warning" href="index.html#audio-envivo">
                         📻 Audio en Vivo
                     </a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="posiciones.html">Tabla</a></li>
-                <li class="nav-item"><a class="nav-link" href="./calendario.html">Calendario</a></li>
-                <li class="nav-item"><a class="nav-link" href="#patrocinadores">Patrocinadores</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#patrocinadores">Patrocinadores</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- ==========================================
+BARRA DE NAVEGACIÓN INFERIOR (SOLO EN MÓVILES - d-lg-none)
+=========================================== -->
+<div class="d-lg-none fixed-bottom bg-black border-top border-danger py-2 shadow-lg z-3">
+    <div class="container d-flex justify-content-around text-center">
+        <a href="index.html#inicio" class="text-white-50 text-decoration-none small">
+            <div class="fs-5">🏠</div>
+            <span class="d-block" style="font-size: 0.75rem;">Inicio</span>
+        </a>
+        <a href="noticias.html" class="text-white-50 text-decoration-none small">
+            <div class="fs-5">📰</div>
+            <span class="d-block" style="font-size: 0.75rem;">Noticias</span>
+        </a>
+        <a href="replays.html" class="text-white-50 text-decoration-none small">
+            <div class="fs-5">▶</div>
+            <span class="d-block" style="font-size: 0.75rem;">Replays</span>
+        </a>
+        <a href="posiciones.html" class="text-white-50 text-decoration-none small">
+            <div class="fs-5">📊</div>
+            <span class="d-block" style="font-size: 0.75rem;">Tabla</span>
+        </a>
+        <a href="calendario.html" class="text-white-50 text-decoration-none small">
+            <div class="fs-5">📅</div>
+            <span class="d-block" style="font-size: 0.75rem;">Agenda</span>
+        </a>
+        <a href="index.html#transmision" class="text-danger text-decoration-none small fw-bold">
+            <div class="fs-5">🔴</div>
+            <span class="d-block" style="font-size: 0.75rem;">En Vivo</span>
+        </a>
+    </div>
+</div>
 
 <!-- ==========================================
 FAVICON (LOGO EN LA PESTAÑA DEL NAVEGADOR)
