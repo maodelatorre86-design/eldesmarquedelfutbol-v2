@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
-    <!-- Noticia NUEVA: Previa América vs Cali -->
+    <!-- Noticia NUEVA: Previa Doble Jornada Fecha 18 (Santa Fe vs Pasto y Tolima vs Millonarios) -->
     <url>
-        <loc>https://www.eldesmarquedelfutbol.com/noticias/previa-america-vs-cali-fecha-18.html</loc>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias/previa-santa-fe-pasto-tolima-millonarios.html</loc>
         <news:news>
             <news:publication>
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-06T18:30:00Z</news:publication_date>
-            <news:title>Todo listo para el clásico: América de Cali y Deportivo Cali definen sus cartas</news:title>
+            <news:publication_date>2026-11-08T10:00:00Z</news:publication_date>
+            <news:title>Doble emoción en la Fecha 18: Santa Fe vs Pasto y Tolima vs Millonarios definen el rumbo</news:title>
         </news:news>
     </url>
 
