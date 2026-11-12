@@ -545,45 +545,41 @@ document.addEventListener("DOMContentLoaded", function() {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     const isAndroid = /Android/i.test(navigator.userAgent);
 
-    function setupAppRedirect(selector, getAppUrl) {
-        const buttons = document.querySelectorAll(selector);
-        buttons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                if (isMobile) {
+    // 1. Configuración para TikTok
+    const tiktokButtons = document.querySelectorAll('.btn-tiktok-app');
+    tiktokButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            if (isMobile) {
+                const webUrl = this.getAttribute('href');
+                if (isAndroid) {
                     e.preventDefault();
-                    const webUrl = this.getAttribute('href');
-                    const appUrl = getAppUrl(webUrl);
+                    // Usa el paquete oficial de América (com.zhiliaoapp.musically) y fallback automático
+                    window.location.href = "intent://www.tiktok.com/@eldesmarquedelfutbol1#Intent;scheme=https;package=com.zhiliaoapp.musically;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end";
+                }
+                // En iPhone/iPad (iOS) no interceptamos el clic: el sistema abre la app oficial automáticamente mediante Universal Links
+            }
+        });
+    });
 
-                    // Intenta abrir la aplicación oficial
-                    window.location.href = appUrl;
-
-                    // Si no está instalada la app estándar, redirige a la tienda/web oficial
+    // 2. Configuración para Kick
+    const kickButtons = document.querySelectorAll('.btn-kick-app');
+    kickButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            if (isMobile) {
+                e.preventDefault();
+                const webUrl = this.getAttribute('href');
+                if (isAndroid) {
+                    window.location.href = "intent://kick.com/eldesmarquedelfutbol#Intent;scheme=https;package=com.kick.mobile;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end";
+                } else {
+                    window.location.href = "kick://channel/eldesmarquedelfutbol";
                     setTimeout(function() {
                         if (!document.hidden) {
                             window.location.href = webUrl;
                         }
                     }, 1500);
                 }
-            });
+            }
         });
-    }
-
-    // Redirección limpia para TikTok usando la app estándar oficial
-    setupAppRedirect('.btn-tiktok-app', function(webUrl) {
-        if (isAndroid) {
-            // Intent para Android asegurando el paquete oficial de TikTok (com.ss.android.ugc.trill)
-            return "intent://tiktok.com/@eldesmarquedelfutbol1#Intent;scheme=https;package=com.ss.android.ugc.trill;end";
-        }
-        // Para iOS (iPhone/iPad) abre directamente el enlace universal que detecta la app oficial
-        return webUrl;
-    });
-
-    // Redirección nativa para Kick
-    setupAppRedirect('.btn-kick-app', function() {
-        if (isAndroid) {
-            return "intent://kick.com/eldesmarquedelfutbol#Intent;scheme=https;package=com.kick.mobile;end";
-        }
-        return "kick://channel/eldesmarquedelfutbol";
     });
 });
 </script>
