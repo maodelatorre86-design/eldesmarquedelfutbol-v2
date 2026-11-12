@@ -417,7 +417,7 @@ HERO PRINCIPAL (PERFECTO EN PC Y MÓVILES)
                                 <span>KICK</span>
                             </a>
                             <!-- BADGE DE TIKTOK -->
-                            <a href="https://www.tiktok.com/@eldesmarquedelfutbol1/live" target="_blank" rel="noopener noreferrer" class="badge bg-dark text-white border border-secondary text-decoration-none fw-bold fs-7 fs-sm-6 px-2 px-sm-3 py-1 py-sm-2 d-inline-flex align-items-center gap-1 btn-tiktok-app" title="Ver en directo y seguir en TikTok">
+                            <a href="https://www.tiktok.com/@eldesmarquedelfutbol1" target="_blank" rel="noopener noreferrer" class="badge bg-dark text-white border border-secondary text-decoration-none fw-bold fs-7 fs-sm-6 px-2 px-sm-3 py-1 py-sm-2 d-inline-flex align-items-center gap-1 btn-tiktok-app" title="Ver en directo y seguir en TikTok">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="flex-shrink-0">
                                     <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
                                 </svg>
@@ -463,7 +463,7 @@ HERO PRINCIPAL (PERFECTO EN PC Y MÓVILES)
                                 VER EN KICK
                             </a>
                             <!-- Botón TikTok (App en Celular / Web en PC) -->
-                            <a href="https://www.tiktok.com/@eldesmarquedelfutbol1/live" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm btn-md-lg fw-bold px-3 px-sm-4 py-2 text-white d-inline-flex align-items-center gap-2 btn-tiktok-app" title="Ver directo en la app de TikTok">
+                            <a href="https://www.tiktok.com/@eldesmarquedelfutbol1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm btn-md-lg fw-bold px-3 px-sm-4 py-2 text-white d-inline-flex align-items-center gap-2 btn-tiktok-app" title="Ver directo en la app de TikTok">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" class="flex-shrink-0">
                                     <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
                                 </svg>
@@ -523,7 +523,7 @@ HERO PRINCIPAL (PERFECTO EN PC Y MÓVILES)
                             CANAL OFICIAL EN KICK
                         </a>
                         <!-- Botón TikTok Lateral -->
-                        <a href="https://www.tiktok.com/@eldesmarquedelfutbol1/live" target="_blank" rel="noopener noreferrer" class="btn btn-danger text-white w-100 fw-bold py-2 d-inline-flex align-items-center justify-content-center gap-2 btn-tiktok-app" title="Ir al canal de TikTok">
+                        <a href="https://www.tiktok.com/@eldesmarquedelfutbol1" target="_blank" rel="noopener noreferrer" class="btn btn-danger text-white w-100 fw-bold py-2 d-inline-flex align-items-center justify-content-center gap-2 btn-tiktok-app" title="Ir al canal de TikTok">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" class="flex-shrink-0">
                                 <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
                             </svg>
@@ -568,9 +568,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Redirección nativa para TikTok
+    // Redirección nativa corregida para TikTok directamente a @eldesmarquedelfutbol1
     setupAppRedirect('.btn-tiktok-app', function() {
-        return "snssdk1233://user/profile/@eldesmarquedelfutbol1";
+        if (isAndroid) {
+            return "intent://tiktok.com/@eldesmarquedelfutbol1#Intent;scheme=https;package=com.ss.android.ugc.trill;end";
+        }
+        return "snssdk1233://profile/@eldesmarquedelfutbol1";
     });
 
     // Redirección nativa para Kick
