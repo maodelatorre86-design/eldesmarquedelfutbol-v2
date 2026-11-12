@@ -554,10 +554,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     const webUrl = this.getAttribute('href');
                     const appUrl = getAppUrl(webUrl);
 
-                    // Intenta abrir la aplicación nativa
+                    // Intenta abrir la aplicación oficial
                     window.location.href = appUrl;
 
-                    // Si no está instalada, redirige al navegador después de 1.5 segundos
+                    // Si no está instalada la app estándar, redirige a la tienda/web oficial
                     setTimeout(function() {
                         if (!document.hidden) {
                             window.location.href = webUrl;
@@ -568,12 +568,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Redirección nativa corregida para TikTok directamente a @eldesmarquedelfutbol1
-    setupAppRedirect('.btn-tiktok-app', function() {
+    // Redirección limpia para TikTok usando la app estándar oficial
+    setupAppRedirect('.btn-tiktok-app', function(webUrl) {
         if (isAndroid) {
+            // Intent para Android asegurando el paquete oficial de TikTok (com.ss.android.ugc.trill)
             return "intent://tiktok.com/@eldesmarquedelfutbol1#Intent;scheme=https;package=com.ss.android.ugc.trill;end";
         }
-        return "snssdk1233://profile/@eldesmarquedelfutbol1";
+        // Para iOS (iPhone/iPad) abre directamente el enlace universal que detecta la app oficial
+        return webUrl;
     });
 
     // Redirección nativa para Kick
