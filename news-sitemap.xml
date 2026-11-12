@@ -2,68 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
-    <!-- Noticia NUEVA: Previa Doble Jornada Fecha 18 (Santa Fe vs Pasto y Tolima vs Millonarios) -->
+    <!-- Noticia Principal: Previa Internacional de Bogotá vs Santa Fe -->
     <url>
-        <loc>https://www.eldesmarquedelfutbol.com/noticias/previa-santa-fe-pasto-tolima-millonarios.html</loc>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
             <news:publication>
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-08T10:00:00Z</news:publication_date>
-            <news:title>Doble emoción en la Fecha 18: Santa Fe vs Pasto y Tolima vs Millonarios definen el rumbo</news:title>
+            <news:publication_date>2026-11-13T08:00:00Z</news:publication_date>
+            <news:title>Internacional de Bogotá vs. Independiente Santa Fe: Todo lo que debes saber de la última fecha en El Campín</news:title>
         </news:news>
     </url>
 
-    <!-- Noticia 1: Medellín vs Fortaleza -->
+    <!-- Noticia 2: El fallo del TAS y la reclasificación -->
     <url>
-        <loc>https://www.eldesmarquedelfutbol.com/noticias/medellin-problemas-fortaleza.html</loc>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
             <news:publication>
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-06T08:00:00Z</news:publication_date>
-            <news:title>Independiente Medellín con problemas para visitar a Fortaleza por la fecha 18</news:title>
+            <news:publication_date>2026-11-12T10:00:00Z</news:publication_date>
+            <news:title>El fallo del TAS sacude la reclasificación de la Liga BetPlay 2026: así se mueve la pelea por torneos internacionales</news:title>
         </news:news>
     </url>
 
-    <!-- Noticia 2: Cuentas cuadrangulares -->
+    <!-- Noticia 3: Nueva alianza automotriz para Santa Fe -->
     <url>
-        <loc>https://www.eldesmarquedelfutbol.com/noticias/cuentas-cuadrangulares-liga.html</loc>
+        <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
             <news:publication>
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-06T07:30:00Z</news:publication_date>
-            <news:title>Calculadora en mano: las cuentas de infarto para clasificar a los cuadrangulares</news:title>
-        </news:news>
-    </url>
-
-    <!-- Noticia 3: Top 20 mundial OPTA -->
-    <url>
-        <loc>https://www.eldesmarquedelfutbol.com/noticias/liga-betplay-top-20-mundial.html</loc>
-        <news:news>
-            <news:publication>
-                <news:name>El Desmarque del Fútbol</news:name>
-                <news:language>es</news:language>
-            </news:publication>
-            <news:publication_date>2026-11-06T06:00:00Z</news:publication_date>
-            <news:title>¡Orgullo patrio! La Liga BetPlay entra al selecto Top 20 de las mejores del mundo</news:title>
-        </news:news>
-    </url>
-
-    <!-- Noticia 4: Cúcuta Deportivo -->
-    <url>
-        <loc>https://www.eldesmarquedelfutbol.com/noticias/cucuta-asegura-categoria-cuadrangulares.html</loc>
-        <news:news>
-            <news:publication>
-                <news:name>El Desmarque del Fútbol</news:name>
-                <news:language>es</news:language>
-            </news:publication>
-            <news:publication_date>2026-11-06T05:00:00Z</news:publication_date>
-            <news:title>Misión cumplida... Cúcuta asegura la categoría y va por los cuadrangulares</news:title>
+            <news:publication_date>2026-11-12T12:00:00Z</news:publication_date>
+            <news:title>Nueva alianza automotriz para Santa Fe: el 'Cardenal' asegura patrocinio internacional hasta 2027</news:title>
         </news:news>
     </url>
 
