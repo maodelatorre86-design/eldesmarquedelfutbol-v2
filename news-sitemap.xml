@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
-    <!-- Noticia Principal: Previa Internacional de Bogotá vs Santa Fe -->
+    <!-- Noticia Principal: Previa Fecha 19 (Millonarios vs Alianza y 6 partidos en simultáneo) -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -10,8 +10,8 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-13T08:00:00Z</news:publication_date>
-            <news:title>Internacional de Bogotá vs. Independiente Santa Fe: Todo lo que debes saber de la última fecha en El Campín</news:title>
+            <news:publication_date>2026-11-14T08:00:00Z</news:publication_date>
+            <news:title>Millonarios vs. Alianza FC y 6 partidos en simultáneo: así se define la Fecha 19 de la Liga BetPlay</news:title>
         </news:news>
     </url>
 
