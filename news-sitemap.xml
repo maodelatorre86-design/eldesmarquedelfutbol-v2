@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
-    <!-- Noticia Principal: Previa Fecha 19 (Millonarios vs Alianza y 6 partidos en simultáneo) -->
+    <!-- Noticia Principal: Previa Semifinal Vuelta Copa Colombia (Nacional vs Once Caldas) -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -10,12 +10,12 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-14T08:00:00Z</news:publication_date>
-            <news:title>Millonarios vs. Alianza FC y 6 partidos en simultáneo: así se define la Fecha 19 de la Liga BetPlay</news:title>
+            <news:publication_date>2026-11-17T08:00:00Z</news:publication_date>
+            <news:title>¡Noche de definición en el Atanasio! Nacional y Once Caldas se juegan el boleto a la final de Copa</news:title>
         </news:news>
     </url>
 
-    <!-- Noticia 2: El fallo del TAS y la reclasificación -->
+    <!-- Noticia 2: Lista de convocados Atlético Nacional -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -23,12 +23,12 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-12T10:00:00Z</news:publication_date>
-            <news:title>El fallo del TAS sacude la reclasificación de la Liga BetPlay 2026: así se mueve la pelea por torneos internacionales</news:title>
+            <news:publication_date>2026-11-17T10:00:00Z</news:publication_date>
+            <news:title>Atlético Nacional: lista de convocados semifinal de vuelta en la Copa BetPlay</news:title>
         </news:news>
     </url>
 
-    <!-- Noticia 3: Nueva alianza automotriz para Santa Fe -->
+    <!-- Noticia 3: Historial reciente y posibles nóminas -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -36,8 +36,8 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-12T12:00:00Z</news:publication_date>
-            <news:title>Nueva alianza automotriz para Santa Fe: el 'Cardenal' asegura patrocinio internacional hasta 2027</news:title>
+            <news:publication_date>2026-11-17T12:00:00Z</news:publication_date>
+            <news:title>Rivalidad al rojo vivo: el historial reciente y las posibles nóminas de Atlético Nacional vs. Once Caldas</news:title>
         </news:news>
     </url>
 
