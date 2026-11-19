@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
-    <!-- Noticia Principal: Previa Semifinal Vuelta Copa Colombia (Nacional vs Once Caldas) -->
+    <!-- Noticia Principal: Previa Fecha 1 Grupo A (Medellín vs Santa Fe) -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -10,12 +10,12 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-17T08:00:00Z</news:publication_date>
-            <news:title>¡Noche de definición en el Atanasio! Nacional y Once Caldas se juegan el boleto a la final de Copa</news:title>
+            <news:publication_date>2026-11-19T14:00:00Z</news:publication_date>
+            <news:title>Arranca el Grupo A en el Atanasio: Independiente Medellín e Independiente Santa Fe abren el telón de los cuadrangulares</news:title>
         </news:news>
     </url>
 
-    <!-- Noticia 2: Lista de convocados Atlético Nacional -->
+    <!-- Noticia 2: Proyección estadística de los cuadrangulares -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -23,12 +23,12 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-17T10:00:00Z</news:publication_date>
-            <news:title>Atlético Nacional: lista de convocados semifinal de vuelta en la Copa BetPlay</news:title>
+            <news:publication_date>2026-11-19T16:00:00Z</news:publication_date>
+            <news:title>La estadística dicta sentencia: así se proyecta la gran final y el campeón de la Liga BetPlay según los datos</news:title>
         </news:news>
     </url>
 
-    <!-- Noticia 3: Historial reciente y posibles nóminas -->
+    <!-- Noticia 3: Designaciones arbitrales Fecha 1 Cuadrangulares -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -36,8 +36,8 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-17T12:00:00Z</news:publication_date>
-            <news:title>Rivalidad al rojo vivo: el historial reciente y las posibles nóminas de Atlético Nacional vs. Once Caldas</news:title>
+            <news:publication_date>2026-11-19T18:00:00Z</news:publication_date>
+            <news:title>Todo listo para el arranque de los cuadrangulares: la FCF oficializó los árbitros de la primera fecha</news:title>
         </news:news>
     </url>
 
