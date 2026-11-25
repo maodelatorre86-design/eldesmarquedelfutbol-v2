@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     
-    <!-- Noticia Principal: Previa Fecha 1 Grupo A (Medellín vs Santa Fe) -->
+    <!-- Noticia Principal: Previa Fecha 2 Grupo A (Santa Fe vs Once Caldas) -->
     <url>
         <loc>https://www.eldesmarquedelfutbol.com/noticias.html</loc>
         <news:news>
@@ -10,8 +10,8 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-23T06:02:00Z</news:publication_date>
-            <news:title>Arranca el Grupo A en el Atanasio: Independiente Medellín e Independiente Santa Fe abren el telón de los cuadrangulares</news:title>
+            <news:publication_date>2026-11-25T03:45:00Z</news:publication_date>
+            <news:title>Duelo clave en El Campín por el Grupo A: Independiente Santa Fe recibe a Once Caldas en la Fecha 2 de la Liga BetPlay</news:title>
         </news:news>
     </url>
 
@@ -23,7 +23,7 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-23T06:02:00Z</news:publication_date>
+            <news:publication_date>2026-11-25T03:45:00Z</news:publication_date>
             <news:title>La estadística dicta sentencia: así se proyecta la gran final y el campeón de la Liga BetPlay según los datos</news:title>
         </news:news>
     </url>
@@ -36,7 +36,7 @@
                 <news:name>El Desmarque del Fútbol</news:name>
                 <news:language>es</news:language>
             </news:publication>
-            <news:publication_date>2026-11-23T06:02:00Z</news:publication_date>
+            <news:publication_date>2026-11-25T03:45:00Z</news:publication_date>
             <news:title>Todo listo para el arranque de los cuadrangulares: la FCF oficializó los árbitros de la primera fecha</news:title>
         </news:news>
     </url>
